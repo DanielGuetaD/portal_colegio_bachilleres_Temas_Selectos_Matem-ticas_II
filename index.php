@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composición de funciones</title>
+
+    <!-- Bootstrap y el estail -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+    <!-- NAVBAR --> <!-- acabo de investigar, tambien puedo usar 2 espacios en lugar de 4, para que no se extienda tanto, voy a probarlo solo aquí-->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+      <div class="container">
+        <a class="navbar-brand" href="https://i.giphy.com/Q3J5xe18ZEOVZqWA8x.webp" style="font-size:30px">Temas Selectos de Matemáticas II</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#conceptos">Conceptos</a></li>
+              <li class="nav-item"><a class="nav-link" href="img/pez.png">Ayuda</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- encabezadoooo waaah -->
+    <header id="inicio" class="hero-section">
+        <div class="container">
+            <div class="p-5 mb-4 rounded-3 jumbotron-custom">
+                <h1 class="display-4 fw-bold text-light">Composición de funciones</h1>
+                <p class="fs-3 text-light">
+                    Las funciones son una forma de transformar valores, pero cuando empiezas a combinarlas, es donde se ponen mas waaahhh mas de miedo mas de wawa (eso te harán creer). La composición de funciones permite encadenar procesos, o más bien, usar el resultado de una función como entrada de otra. Esto en programación y mate es muy util, porque muestra cómo una idea pasa por muchas etapas hasta llegar a un resultado final. Entender esta cosa te ayuda a ver las funciones no como cosas aisladas, cosas solas y aburridas, sino como partes geniales de un sistema que trabaja en un genial conjunto.
+                </p>
+                <a href="#conceptos" class="btn btn-primary btn-lg custom-button">
+                    Leer más »
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE CONCEPTOS -->
+    <section id="conceptos" class="container my-5">
+        <div class="row">
+
+            <!-- COLUMNA 1 -->
+            <div class="col-md-4 text-center column-item" style="background-color:#598bc0">
+                <div class="circle-placeholder mb-3"> <img src="img/cdf.png" class="img-fluid rounded-circle"></div>
+                <h2>¿Qué es la composición de funciones?</h2>
+                <p>
+                    Es como cuando aplicas una función y luego usas su resultado como entrada de otra. <br> Como ejemplo: g(x) = x + 2, f(x) = x^2 <br> Entonces: <br>  f(g(x)) = (x + 2)^2
+                    <br> Primero haces g(x), luego ese resultado lo metes en f.
+                </p>
+            </div>
+
+            <!-- COLUMNA 2 -->
+            <div class="col-md-4 text-center column-item" style="background-color:#b5e4df">
+                <div class="circle-placeholder mb-3"> <img src="img/composicion_funciones.jpg" class="img-fluid rounded-circle"> </div>
+                <h2>Orden importa (y mucho panucho)</h2>
+                <p>
+
+                    No es lo mismo:<!-- me acabo de dar cuenta que es mala idea poner texto de corrido en vsc -->
+                    <br>f(g(x))
+                    <br>que:
+                    <br>g(f(x))
+                    <br>Como ejemplo:
+                    <br>f(g(x)) = (x + 2)^2
+                    <br>g(f(x)) = x^2 + 2
+                    <br>Son diferentes jeje cambiar el orden cambia todo.
+                </p>
+            </div>
+
+            <!-- COLUMNA 3 -->
+            <div class="col-md-4 text-center column-item" style="background-color:#598bc0">
+                <div class="circle-placeholder mb-3"> <img src="img/carnitas.png" class="img-fluid rounded-circle"> </div>
+                <h2>Cómo resolverlo con pasos </h2>
+                <p>
+                    Regla simple: <!-- 1000 veces mejor ordenar texto por columna de este tipo a hacerlo todo en una linea, en este caso, si-->
+                    <br>1. Toma la función de adentro.
+                    <br>2. Sustitúyela en la de afuera.
+                    <br>3. Simplificalo y ya :v
+                    <br>Como ejemplo:
+                    <br>f(x) = 3x
+                    <br>g(x) = x - 1
+                    <br>f(g(x)) = 3(x - 1) = 3x - 3
+                    <br>No es muy muy complicado, solo reemplaza y simplifica jeje
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pata de pagina -->
+    <footer class="container border-top pt-3">
+        <p>&copy; 26 del 26 del 26 - Lo saqué todo de mi cuaderno   </p>
+    </footer>
+</body>
+</html>

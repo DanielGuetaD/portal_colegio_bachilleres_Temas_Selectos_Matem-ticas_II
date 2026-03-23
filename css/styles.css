@@ -1,0 +1,51 @@
+body {
+    background-color:#162433;
+}
+.custom-nav {
+    background-color: #1a1a1a;
+    border-bottom: 5px solid #333;
+}
+
+.jumbotron-custom {
+    background: url('funciones.jpeg') center/cover no-repeat;
+    padding: 4rem 2rem;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* El botón azul con degradado sutil */
+.custom-button {
+    background-color: #162433;
+    border-color: #0062cc;
+    padding: 10px 25px;
+}
+
+/* Los círculos de las columnas */
+.circle-placeholder {
+    width: 220px;
+    height: 220px;
+    background-color: #e2e2e2;
+    border-radius: 100%;
+    display: inline-flex;
+    color: #888;
+}
+
+/* Espaciado de las columnas */
+.column-item h2 {
+    font-weight: 700;
+    color: #000000;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.column-item p, li {
+    color: #000001;
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+
+footer {
+    color: #ffffff;
+    font-size: 24px;
+}
